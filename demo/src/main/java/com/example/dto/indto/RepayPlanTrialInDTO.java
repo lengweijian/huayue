@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 public class RepayPlanTrialInDTO implements Serializable {
 
     // 请求报文体
-    private int id;
     private BigDecimal trxAmt;
     private String termNo;
     private String rpyMthd;
@@ -28,13 +27,6 @@ public class RepayPlanTrialInDTO implements Serializable {
     private String bankCode;
     private String productType;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public BigDecimal getTrxAmt() {
         return trxAmt;

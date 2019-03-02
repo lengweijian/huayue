@@ -1,5 +1,6 @@
-package com.example.service;
+package com.example.service.impl;
 
+import com.example.service.RepayPlanService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @Version 1.0
  */
 @Service
-public class RepayPlanServiceImpl implements RepayPlanService{
+public class RepayPlanServiceImpl implements RepayPlanService {
 
 
 }

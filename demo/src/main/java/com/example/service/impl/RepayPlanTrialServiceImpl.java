@@ -1,7 +1,9 @@
-package com.example.service;
+package com.example.service.impl;
 
 import com.example.dto.outdto.RepayPlanTrialOutDTO;
 import com.example.respository.RepayPlanTrialDao;
+import com.example.service.RepayPlanService;
+import com.example.service.RepayPlanTrialService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +20,7 @@ import java.util.List;
  *
  */
 @Service
-public class RepayPlanTrialServiceImpl implements RepayPlanTrialService{
+public class RepayPlanTrialServiceImpl implements RepayPlanTrialService {
 
 
     @Autowired

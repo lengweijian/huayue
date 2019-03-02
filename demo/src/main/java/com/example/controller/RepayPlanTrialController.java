@@ -24,6 +24,7 @@ import java.util.List;
  *
  */
 @RestController
+@RequestMapping("/RepayPlanTrial")
 public class RepayPlanTrialController {
 
     @Autowired
