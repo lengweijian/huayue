@@ -1,0 +1,46 @@
+﻿请求报文体: {
+	"trxAmt": "10000",
+	"rpyMthd": "EQ_CI",
+	"termNo": "2",
+	"openDate": "",
+	"intRate": "7.6",
+	"payDay": "15"
+}
+
+请求发送报文: {
+	"corporateCode": "007",
+	"infoContent": "iWMbO\/P1gK2LNpgblyGx+BRG54hzqEKK7udQN8vM5Eq7KaIyONGTjJJgsrKgTbhZFHZ8iu2wzru1TCcNen2RDdYT+4c0TDm9XLG3VKIpnIZVOctmaQO0z9Ybfz76aW4x",
+	"requestSeqNo": "201803291832151I8OEz",
+	"interfaceId": "RepayPlanTrial",
+	"infoSign": "207532431598d37236c28b8c7a155b0d",
+	"bankCode": "XXBC",
+	"productType": "2"
+}
+
+请求响应报文: {
+	"corporateCode": "007",
+	"infoContent": "ljH6J7OhGXwN2tkLTJtifDLFYzpou7FQWDa874vtkYUZ4wI8vOyV5eBqDkkp7\/tI80B+Uoh9sE7qxaE+X3tWw\/m0MN7YiV8j4HVdJyXdwA\/vRxcKixHRo6Bk10tEsym07e8ZVxNoAASSgA4FMYXre95qLhnnzNGo5G4ZHy8OXqXGTtenvwo1uKopJBEfZTWxk3xywhVhE3K3j9Qns9W6mwKI9YyzkEgtU3Binod1ADJ4UqUsN6hK8267CEr4WxvXc264IauweWSyqzY7ka5cndeYZLc88WUphQ3jHwHtjZc=",
+	"respCode": "S",
+	"requestSeqNo": "201803291832151I8OEz",
+	"interfaceId": "RepayPlanTrial",
+	"respMsg": "",
+	"infoSign": "1cb3d36c1b3a3b9ddd23f94bcd0dc6b9",
+	"bankCode": "XXBC",
+	"productType": "2"
+}
+
+响应报文体: {
+	"retCode": "S",
+	"retMsg": "接收成功",
+	"resultList": [{
+		"termNo": "1",
+		"dueCapital": "10000",
+		"dueDate": "20180501",
+		"dueInt": "400"
+	}, {
+		"termNo": "2",
+		"dueCapital": "10100",
+		"dueDate": "20180601",
+		"dueInt": "300"
+	}]
+}
