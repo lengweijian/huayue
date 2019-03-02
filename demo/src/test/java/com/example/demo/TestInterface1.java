@@ -16,19 +16,7 @@ import org.junit.Test;
 public class TestInterface1 {
 
     @Test
-    public void testInterface1(){
-            // 3.输入参数
-        /*RepayPlanTrialInDTO repayPlanTrialInDTO = new RepayPlanTrialInDTO();
-        repayPlanTrialInDTO.setIntRate("111");
-        repayPlanTrialInDTO.setOpenDate("222");
-        repayPlanTrialInDTO.setRpyMthd("444");
-        repayPlanTrialInDTO.setTermNo("555");
-        repayPlanTrialInDTO.setTrxAmt(new BigDecimal("3.14"));
-
-        postHasParams(repayPlanTrialInDTO);*/
-
-            // 1.添加返回数据到mysql
-            // mock的接口参数为response
+    public void testInterface1_addOne(){
             String response = "{\n" +
                     "\t\"corporateCode\": \"007\",\n" +
                     "\t\"infoContent\": \"ljH6J7OhGXwN2tkLTJtifDLFYzpou7FQWDa874vtkYUZ4wI8vOyV5eBqDkkp7\\/tI80B+Uoh9sE7qxaE+X3tWw\\/m0MN7YiV8j4HVdJyXdwA\\/vRxcKixHRo6Bk10tEsym07e8ZVxNoAASSgA4FMYXre95qLhnnzNGo5G4ZHy8OXqXGTtenvwo1uKopJBEfZTWxk3xywhVhE3K3j9Qns9W6mwKI9YyzkEgtU3Binod1ADJ4UqUsN6hK8267CEr4WxvXc264IauweWSyqzY7ka5cndeYZLc88WUphQ3jHwHtjZc=\",\n" +
@@ -56,23 +44,12 @@ public class TestInterface1 {
             // 调用工具类将接口json串转换成对象
             RepayPlanTrialOutDTO jsonToBean = FastJsonUtils.getJsonToBean(response, RepayPlanTrialOutDTO.class);
 
-            /*List<RepayPlan> resultList = jsonToBean.getResultList();
-
-            List<RepayPlan> newResult = new ArrayList<>();
-            for (RepayPlan one : resultList) {
-                //one.setId(UUID.randomUUID().toString());
-                newResult.add(one);
-            }
-            sonToBean.setResultList(newResult);*/
-            // 调用接口执行添加操作
-            // System.out.println(jsonToBean.toString());
-            // HttpClientUtils.postHasParams(jsonToBean, Constant.INTERFACE1_ADDONE);
         HttpClientUtils.postHasParams(jsonToBean, Constant.INTERFACE1_ADDONE);
 
     }
 
     @Test
-    public void test(){
-
+    public void testInterface1_findAll(){
+        HttpClientUtils.postHasParams(null, Constant.INTERFACE1_FINDALL);
     }
 }

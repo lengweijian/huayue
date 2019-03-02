@@ -38,8 +38,7 @@ public class RepayPlanTrialServiceImpl implements RepayPlanTrialService{
             newResultSet.add(oneResultSet);
         }
 */
-
-        return null;
+        return repayPlanTrialDao.findAll();
     }
 
     @Override
