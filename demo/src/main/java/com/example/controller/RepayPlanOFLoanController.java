@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @ClassName RepayPlanOFLoanController
- * @Description TODO
+ * @Description interface2
  * @Author LengWJ
  * @Date 2019/3/2  18:44
  * @Version 1.0
