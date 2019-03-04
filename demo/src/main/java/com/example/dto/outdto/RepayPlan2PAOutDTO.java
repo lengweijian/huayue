@@ -27,87 +27,87 @@ public class RepayPlan2PAOutDTO implements Serializable {
     /**
      * 1.借据号
      */
-    @Column(name="retCode",nullable=false)
+    @Column(name="loanNo",nullable=false)
     private String loanNo;
 
     /**
      * 2.本期状态标志
      */
-    @Column(name="retCode",nullable=false)
+    @Column(name="curTermStatus",nullable=false)
     private String curTermStatus;
 
     /**
      * 3.本期期数
      */
-    @Column(name="retCode",nullable=false)
+    @Column(name="termNo",nullable=false)
     private String termNo;
 
     /**
      * 4.本期应还款日
      *              格式:yyyyMMdd
      */
-    @Column(name="retCode",nullable=false)
+    @Column(name="dueDate",nullable=false)
     private String dueDate;
 
     /**
      * 5.本期结清日期
      *              格式:YYYYMMDD
      */
-    @Column(name="retCode")
+    @Column(name="settleDate")
     private String settleDate;
 
     /**
      * 6.利率
      */
-    @Column(name="retCode",nullable=false)
+    @Column(name="intRate",nullable=false)
     private BigDecimal intRate;
 
     /**
      * 7.罚息利率
      */
-    @Column(name="retCode",nullable=false)
+    @Column(name="odIntRate",nullable=false)
     private BigDecimal odIntRate;
 
     /**
      * 8.总应还本金
      *              应还=已还+尚欠
      */
-    @Column(name="retCode",nullable=false)
+    @Column(name="dueCapital",nullable=false)
     private BigDecimal dueCapital;
 
     /**
      * 9.总应还利息
      *              应还=已还+尚欠
      */
-    @Column(name="retCode",nullable=false)
+    @Column(name="dueInt",nullable=false)
     private BigDecimal dueInt;
 
     /**
      * 10.总应还罚息(这里的罚息包含复利)
      *              应还=已还+尚欠
      */
-    @Column(name="retCode",nullable=false)
+    @Column(name="dueOInt",nullable=false)
     private BigDecimal dueOInt;
 
     /**
      * 11.尚欠本金
      *              尚欠=应还-已还
      */
-    @Column(name="retCode",nullable=false)
+    @Column(name="oweCapital",nullable=false)
     private BigDecimal oweCapital;
 
     /**
      * 12.尚欠利息
      *              尚欠=应还-已还
      */
-    @Column(name="retCode",nullable=false)
+    @Column(name="oweInt",nullable=false)
     private BigDecimal oweInt;
 
     /**
      * 13.尚欠罚息(这里的罚息包含复利)
      *              尚欠=应还-已还
      */
-    @Column(name="retCode",nullable=false)
+    @Column(name="oweOInt",nullable=false)
     private BigDecimal oweOInt;
 
     public Long getId() {

@@ -68,7 +68,7 @@ public class RepayResultOutDto implements Serializable {
      *          W 工作日账户
      *          H 节假日账户
      */
-    @Column(name="tradeFlag",nullable=false)
+    @Column(name="acctFlag",nullable=false)
     private String acctFlag;
     public Long getId() {
         return id;
@@ -124,5 +124,18 @@ public class RepayResultOutDto implements Serializable {
 
     public void setAcctFlag(String acctFlag) {
         this.acctFlag = acctFlag;
+    }
+
+    @Override
+    public String toString() {
+        return "RepayResultOutDto{" +
+                "id=" + id +
+                ", loanNo='" + loanNo + '\'' +
+                ", tradeDate='" + tradeDate + '\'' +
+                ", tradeAmt=" + tradeAmt +
+                ", tradeSeqNo='" + tradeSeqNo + '\'' +
+                ", tradeFlag='" + tradeFlag + '\'' +
+                ", acctFlag='" + acctFlag + '\'' +
+                '}';
     }
 }
