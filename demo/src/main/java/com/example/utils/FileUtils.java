@@ -25,11 +25,17 @@ public class FileUtils {
                 read = new InputStreamReader(new FileInputStream(file), ENCODING);
                 bufferedReader = new BufferedReader(read);
                 String lineTxt = null;
+                int lineIndex = 1;
                 while ((lineTxt = bufferedReader.readLine()) != null) {
+
+                    // 如果第二行是D开头就读进来
+                    if(lineIndex == 2){
+                        lines.append(lineTxt);
+                    }
                     if (lineTxt == null || lineTxt.length() == 0) {
                         continue;
                     }
-                    lines.append(lineTxt);
+                    lineIndex ++;
                 }
             }
         } catch (Exception e) {
